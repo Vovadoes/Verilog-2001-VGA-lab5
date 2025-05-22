@@ -54,8 +54,8 @@ reg [2:0] state;// new_state;
 wire [1:0] flags;
 reg [15:0] buffer_in = 0;
 wire vga_clk;
-wire mem_addr;
-wire mem_data;
+wire [$clog2(`WIDTH * `HEIGHT)-1:0] mem_addr;
+wire [`COLOR_BIT_SIZE-1:0] mem_data;
 wire vgaBegin;
 wire vgaEnd;
 
