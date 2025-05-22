@@ -58,6 +58,8 @@ wire mem_addr;
 wire mem_data;
 wire vgaBegin;
 wire vgaEnd;
+
+
 initial
 begin
     R_I <= 0;
