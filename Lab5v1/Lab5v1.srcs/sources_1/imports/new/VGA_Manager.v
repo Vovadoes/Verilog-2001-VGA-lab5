@@ -385,8 +385,6 @@ vio_1 vio1(
 .probe_in13(result_reg),
 .probe_in14(error_reg),
 .probe_in15(char_counter)
-
-
 );
 
 endmodule
