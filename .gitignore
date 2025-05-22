@@ -403,3 +403,5 @@ FodyWeavers.xsd
 **/Lab5v1.hw/
 **/Lab5v1.gen/
 **/Lab5v1.runs/
+/Lab5v1/*.str
+/Lab5v1/*.jou
