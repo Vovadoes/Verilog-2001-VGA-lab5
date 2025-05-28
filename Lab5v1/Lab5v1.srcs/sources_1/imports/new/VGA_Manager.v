@@ -359,29 +359,45 @@ begin: main
 //			end	
 		
 		`S0:
+		  if (ready_to_change) begin
+		      y0 <= 0;
+		      x0 <= 0;
+		      pixel_counter <= 0;
+		      state <= `S1;
+		  end
+		
+		`S1:
 		  begin
-		    if (x0 == `WIDTH) begin
+		    begin
+              frame_buf_we <= 1;
+              frame_buf_data_in <= {bitmap[y0][x0], bitmap[y0][x0], bitmap[y0][x0]};
+              frame_buf_addr <= pixel_counter;
+              state <= `S2;
+			end
+		  end
+		
+		`S2:
+          begin
+			x0 <= x0 + 1;
+			pixel_counter <= pixel_counter + 1;
+			state <= `S3;
+		  end
+		
+		`S3:
+          begin
+			if (x0 == `WIDTH) begin
 		      frame_buf_we <= 0;
 		      if (y0 == `HEIGHT - 1) begin
 		        state <= `S6;
 		      end else begin
 		        y0 <= y0 + 1;
 		        x0 <= 0;
+		        state <= `S1;
 		      end
 		    end else begin
-              frame_buf_we <= 1;
-              frame_buf_data_in <= bitmap[y0][x0] ? color_reg : 0;
-              frame_buf_addr <= pixel_counter;
-              state <= `S1;
-			end
+		      state <= `S1;
+		    end
 		  end
-		
-		`S1:
-          begin
-			x0 <= x0 + 1; // Переход к следующему пикселю в текущей строке в текущем символе
-			pixel_counter <= pixel_counter + 1;	// Расчёт следующего адреса в памяти для записи
-			state <= `S0;
-		  end	
 		
 		// Состояние ожидания прихода сигнала о начале отрисовки одного кадра	
 		`S6:
