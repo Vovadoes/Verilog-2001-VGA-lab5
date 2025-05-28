@@ -100,7 +100,7 @@ wire [3:0] VGA_M_state = manager.state;
 
 VGA_Manager manager(
     .clk(vga_clk),
-    .result_in(FSM_Data_Input),
+    .result_in(shift_register),
     .error_in(R_E),
     .ready_to_change(FSM_Ready_Input),
     .vgaBegin(vgaBegin),
