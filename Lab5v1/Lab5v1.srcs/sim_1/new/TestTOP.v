@@ -21,7 +21,7 @@ wire [3:0] vgaBlue;
 wire Hsync;
 wire Vsync;
 
-localparam LENGHT_ARR = 14;
+localparam LENGHT_ARR = 15;
 
 reg clk;
 always #(10) clk <= ~clk;
