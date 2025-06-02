@@ -2,11 +2,11 @@
 
 module UART #
 (
-    localparam CLOCK_RATE = 100_000_000, // Частота ПЛИС XC7A100T-1CSG324 семейства Artix-7 (в Гц)
-    localparam BAUD_RATE = 9600,	// Скорость передачи данных по UART (в бод)
-    localparam ERROR_COUNT = 3, // Количество возможных ошибок основного автомата
-    localparam DIGIT_COUNT = 4, // Разрядность входных данных, представленных в 16-ричном виде
-    localparam MOD_DELITEL = 16000
+    parameter CLOCK_RATE = 100_000_000, // Частота ПЛИС XC7A100T-1CSG324 семейства Artix-7 (в Гц)
+    parameter BAUD_RATE = 9600,	// Скорость передачи данных по UART (в бод)
+    parameter ERROR_COUNT = 3, // Количество возможных ошибок основного автомата
+    parameter DIGIT_COUNT = 4, // Разрядность входных данных, представленных в 16-ричном виде
+    parameter MOD_DELITEL = 16000
 )
 (
 	input clk,		// Синхросигнал
@@ -54,8 +54,10 @@ reg [2:0] state;// new_state;
 wire [1:0] flags;
 reg [15:0] buffer_in = 0;
 wire vga_clk;
-wire [$clog2(`WIDTH * `HEIGHT)-1:0] mem_addr;
-wire [`COLOR_BIT_SIZE-1:0] mem_data;
+//wire [$clog2(`WIDTH * `HEIGHT)-1:0] mem_addr;
+//wire [`COLOR_BIT_SIZE-1:0] mem_data;
+wire [18:0] mem_addr;
+wire [3:0] mem_data;
 wire vgaBegin;
 wire vgaEnd;
 
@@ -185,14 +187,40 @@ SevenSegmentLED seg(
     .SEG(SEG)
 );
 
-automat_2 automat(.clk(clk), .reset(reset), .R_I(R_I), .data_in(data_in), .data_out(FSM_Data_Output), .R_E(FSM_Error_Output), .R_O(FSM_Ready_Output), .state(a_state), .x(x), //.new_x(new_x),
-                .a_(a), .b_(b), .c_(c), .sum_out(sum_out), .mul_out(mul_out), .div_out(div_out), .R_O_sum(R_O_sum), .R_O_mul(R_O_mul), .R_O_div(R_O_div),
-                .a_sum(a_sum), .b_sum(b_sum), .a_mul(a_mul), .b_mul(b_mul), .a_div(a_div), .b_div(b_div));
+automat_2 automat(
+    .clk(clk), 
+    .reset(reset), 
+    .R_I(R_I), 
+    .data_in(data_in), 
+    .data_out(FSM_Data_Output), 
+    .R_E(FSM_Error_Output), 
+    .R_O(FSM_Ready_Output), 
+    .state(a_state), 
+    .x(x),
+    .a_(a),
+    .b_(b), 
+    .c_(c), 
+    .sum_out(sum_out), 
+    .mul_out(mul_out), 
+    .div_out(div_out), 
+    .R_O_sum(R_O_sum), 
+    .R_O_mul(R_O_mul), 
+    .R_O_div(R_O_div),
+    .a_sum(a_sum), 
+    .b_sum(b_sum), 
+    .a_mul(a_mul), 
+    .b_mul(b_mul), 
+    .a_div(a_div), 
+    .b_div(b_div)
+);
  
 
 // Автомат, занимающийся менеджментом входных данных с UART
-UART_Input_Manager #(.DIGIT_COUNT(DIGIT_COUNT)) uart_input_manager 
-(
+UART_Input_Manager #(
+    .CLOCK_RATE(CLOCK_RATE),
+    .BAUD_RATE(BAUD_RATE),
+    .DIGIT_COUNT(DIGIT_COUNT)
+) uart_input_manager (
 	.clk(clk), 		// Вход синхросигнала
 	.reset(reset),
 	.RsRx(RsRx),
@@ -200,8 +228,11 @@ UART_Input_Manager #(.DIGIT_COUNT(DIGIT_COUNT)) uart_input_manager
 	.ready_out(FSM_Ready_Input)	// Выход - сигнал о том, что данные на выходе <number_out> сформированы
 );
 // Автомат, занимающийся менеджментом выходных данных на UART
-UART_Output_Manager #(.ERROR_COUNT(ERROR_COUNT)) uart_output_manager 
-(
+UART_Output_Manager #(
+    .CLOCK_RATE(CLOCK_RATE),
+    .BAUD_RATE(BAUD_RATE),
+    .ERROR_COUNT(ERROR_COUNT)
+) uart_output_manager (
 	.clk(clk), // Вход: Синхросигнал
 	.reset(reset),
 	.ready_in(FSM_Ready_Output), // Вход: сигнал о том, что данные для отправки по UART сформированы
@@ -238,7 +269,7 @@ VGA vga(
 	.vgaEnd(vgaEnd)
 );
 
-clk_wiz_0(
+clk_wiz_0 wiz0(
     .clk_in1(clk),
     .clk_out1(vga_clk)
 );

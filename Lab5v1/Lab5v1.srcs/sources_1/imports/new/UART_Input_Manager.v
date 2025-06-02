@@ -2,9 +2,9 @@
 
 module UART_Input_Manager #
 (
-	CLOCK_RATE = 100_000_000, // Частота ПЛИС XC7A100T-1CSG324C семейства Artix-7 (в Гц)
-    BAUD_RATE = 9600,		  // Скорость передачи данных по UART (в бод)
-	DIGIT_COUNT = 4           // Разрядность входных данных, представленных в 16-ричном виде
+	parameter CLOCK_RATE = 100_000_000, // Частота ПЛИС XC7A100T-1CSG324C семейства Artix-7 (в Гц)
+    parameter BAUD_RATE = 9600,		  // Скорость передачи данных по UART (в бод)
+	parameter DIGIT_COUNT = 4           // Разрядность входных данных, представленных в 16-ричном виде
 )
 (
 	input clk, 					 // Синхросигнал
