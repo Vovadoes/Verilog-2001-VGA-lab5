@@ -12,12 +12,12 @@
    </db_ref_list>
    <zoom_setting>
       <ZoomStartTime time="0.000000000 ms"></ZoomStartTime>
-      <ZoomEndTime time="16.510936125 ms"></ZoomEndTime>
-      <Cursor1Time time="8.627125000 ms"></Cursor1Time>
+      <ZoomEndTime time="6.950976893 ms"></ZoomEndTime>
+      <Cursor1Time time="3.495812940 ms"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="304"></NameColumnWidth>
-      <ValueColumnWidth column_width="103"></ValueColumnWidth>
+      <ValueColumnWidth column_width="97"></ValueColumnWidth>
    </column_width_setting>
    <WVObjectSize size="7" />
    <wvobject fp_name="group263" type="group">
@@ -129,10 +129,6 @@
          <obj_property name="ElementShortName">clk</obj_property>
          <obj_property name="ObjectShortName">clk</obj_property>
       </wvobject>
-      <wvobject fp_name="/TestTOP/UART1/state" type="array">
-         <obj_property name="ElementShortName">state[2:0]</obj_property>
-         <obj_property name="ObjectShortName">state[2:0]</obj_property>
-      </wvobject>
       <wvobject fp_name="/TestTOP/UART1/FSM_Ready_Input" type="logic">
          <obj_property name="ElementShortName">FSM_Ready_Input</obj_property>
          <obj_property name="ObjectShortName">FSM_Ready_Input</obj_property>
@@ -209,90 +205,6 @@
          <obj_property name="ElementShortName">reset</obj_property>
          <obj_property name="ObjectShortName">reset</obj_property>
       </wvobject>
-      <wvobject fp_name="/TestTOP/UART1/R_I" type="array">
-         <obj_property name="ElementShortName">R_I[1:0]</obj_property>
-         <obj_property name="ObjectShortName">R_I[1:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/TestTOP/UART1/data_in" type="array">
-         <obj_property name="ElementShortName">data_in[15:0]</obj_property>
-         <obj_property name="ObjectShortName">data_in[15:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/TestTOP/UART1/data_out" type="array">
-         <obj_property name="ElementShortName">data_out[15:0]</obj_property>
-         <obj_property name="ObjectShortName">data_out[15:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/TestTOP/UART1/x" type="array">
-         <obj_property name="ElementShortName">x[15:0]</obj_property>
-         <obj_property name="ObjectShortName">x[15:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/TestTOP/UART1/new_x" type="array">
-         <obj_property name="ElementShortName">new_x[15:0]</obj_property>
-         <obj_property name="ObjectShortName">new_x[15:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/TestTOP/UART1/a" type="array">
-         <obj_property name="ElementShortName">a[15:0]</obj_property>
-         <obj_property name="ObjectShortName">a[15:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/TestTOP/UART1/b" type="array">
-         <obj_property name="ElementShortName">b[15:0]</obj_property>
-         <obj_property name="ObjectShortName">b[15:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/TestTOP/UART1/c" type="array">
-         <obj_property name="ElementShortName">c[15:0]</obj_property>
-         <obj_property name="ObjectShortName">c[15:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/TestTOP/UART1/sum_out" type="array">
-         <obj_property name="ElementShortName">sum_out[15:0]</obj_property>
-         <obj_property name="ObjectShortName">sum_out[15:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/TestTOP/UART1/mul_out" type="array">
-         <obj_property name="ElementShortName">mul_out[15:0]</obj_property>
-         <obj_property name="ObjectShortName">mul_out[15:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/TestTOP/UART1/div_out" type="array">
-         <obj_property name="ElementShortName">div_out[15:0]</obj_property>
-         <obj_property name="ObjectShortName">div_out[15:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/TestTOP/UART1/R_O_sum" type="logic">
-         <obj_property name="ElementShortName">R_O_sum</obj_property>
-         <obj_property name="ObjectShortName">R_O_sum</obj_property>
-      </wvobject>
-      <wvobject fp_name="/TestTOP/UART1/R_O_mul" type="logic">
-         <obj_property name="ElementShortName">R_O_mul</obj_property>
-         <obj_property name="ObjectShortName">R_O_mul</obj_property>
-      </wvobject>
-      <wvobject fp_name="/TestTOP/UART1/R_O_div" type="logic">
-         <obj_property name="ElementShortName">R_O_div</obj_property>
-         <obj_property name="ObjectShortName">R_O_div</obj_property>
-      </wvobject>
-      <wvobject fp_name="/TestTOP/UART1/a_sum" type="array">
-         <obj_property name="ElementShortName">a_sum[15:0]</obj_property>
-         <obj_property name="ObjectShortName">a_sum[15:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/TestTOP/UART1/b_sum" type="array">
-         <obj_property name="ElementShortName">b_sum[15:0]</obj_property>
-         <obj_property name="ObjectShortName">b_sum[15:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/TestTOP/UART1/a_mul" type="array">
-         <obj_property name="ElementShortName">a_mul[15:0]</obj_property>
-         <obj_property name="ObjectShortName">a_mul[15:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/TestTOP/UART1/b_mul" type="array">
-         <obj_property name="ElementShortName">b_mul[15:0]</obj_property>
-         <obj_property name="ObjectShortName">b_mul[15:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/TestTOP/UART1/a_div" type="array">
-         <obj_property name="ElementShortName">a_div[15:0]</obj_property>
-         <obj_property name="ObjectShortName">a_div[15:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/TestTOP/UART1/b_div" type="array">
-         <obj_property name="ElementShortName">b_div[15:0]</obj_property>
-         <obj_property name="ObjectShortName">b_div[15:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/TestTOP/UART1/a_state" type="array">
-         <obj_property name="ElementShortName">a_state[6:0]</obj_property>
-         <obj_property name="ObjectShortName">a_state[6:0]</obj_property>
-      </wvobject>
       <wvobject fp_name="/TestTOP/UART1/R_E" type="array">
          <obj_property name="ElementShortName">R_E[1:0]</obj_property>
          <obj_property name="ObjectShortName">R_E[1:0]</obj_property>
@@ -300,14 +212,6 @@
       <wvobject fp_name="/TestTOP/UART1/cnt" type="array">
          <obj_property name="ElementShortName">cnt[6:0]</obj_property>
          <obj_property name="ObjectShortName">cnt[6:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/TestTOP/UART1/flags" type="array">
-         <obj_property name="ElementShortName">flags[1:0]</obj_property>
-         <obj_property name="ObjectShortName">flags[1:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/TestTOP/UART1/buffer_in" type="array">
-         <obj_property name="ElementShortName">buffer_in[15:0]</obj_property>
-         <obj_property name="ObjectShortName">buffer_in[15:0]</obj_property>
       </wvobject>
       <wvobject fp_name="/TestTOP/UART1/vga_clk" type="logic">
          <obj_property name="ElementShortName">vga_clk</obj_property>
@@ -361,214 +265,6 @@
    <wvobject fp_name="group83" type="group">
       <obj_property name="label">automat</obj_property>
       <obj_property name="DisplayName">label</obj_property>
-      <wvobject fp_name="/TestTOP/UART1/automat/clk" type="logic">
-         <obj_property name="ElementShortName">clk</obj_property>
-         <obj_property name="ObjectShortName">clk</obj_property>
-      </wvobject>
-      <wvobject fp_name="/TestTOP/UART1/automat/state" type="array">
-         <obj_property name="ElementShortName">state[6:0]</obj_property>
-         <obj_property name="ObjectShortName">state[6:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/TestTOP/UART1/automat/data_in" type="array">
-         <obj_property name="ElementShortName">data_in[15:0]</obj_property>
-         <obj_property name="ObjectShortName">data_in[15:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/TestTOP/UART1/automat/reset" type="logic">
-         <obj_property name="ElementShortName">reset</obj_property>
-         <obj_property name="ObjectShortName">reset</obj_property>
-      </wvobject>
-      <wvobject fp_name="/TestTOP/UART1/automat/R_I" type="array">
-         <obj_property name="ElementShortName">R_I[1:0]</obj_property>
-         <obj_property name="ObjectShortName">R_I[1:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/TestTOP/UART1/automat/data_out" type="array">
-         <obj_property name="ElementShortName">data_out[15:0]</obj_property>
-         <obj_property name="ObjectShortName">data_out[15:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/TestTOP/UART1/automat/R_E" type="array">
-         <obj_property name="ElementShortName">R_E[1:0]</obj_property>
-         <obj_property name="ObjectShortName">R_E[1:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/TestTOP/UART1/automat/R_O" type="logic">
-         <obj_property name="ElementShortName">R_O</obj_property>
-         <obj_property name="ObjectShortName">R_O</obj_property>
-      </wvobject>
-      <wvobject fp_name="/TestTOP/UART1/automat/x" type="array">
-         <obj_property name="ElementShortName">x[15:0]</obj_property>
-         <obj_property name="ObjectShortName">x[15:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/TestTOP/UART1/automat/sum_out" type="array">
-         <obj_property name="ElementShortName">sum_out[15:0]</obj_property>
-         <obj_property name="ObjectShortName">sum_out[15:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/TestTOP/UART1/automat/mul_out" type="array">
-         <obj_property name="ElementShortName">mul_out[15:0]</obj_property>
-         <obj_property name="ObjectShortName">mul_out[15:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/TestTOP/UART1/automat/div_out" type="array">
-         <obj_property name="ElementShortName">div_out[15:0]</obj_property>
-         <obj_property name="ObjectShortName">div_out[15:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/TestTOP/UART1/automat/R_O_sum" type="logic">
-         <obj_property name="ElementShortName">R_O_sum</obj_property>
-         <obj_property name="ObjectShortName">R_O_sum</obj_property>
-      </wvobject>
-      <wvobject fp_name="/TestTOP/UART1/automat/R_O_mul" type="logic">
-         <obj_property name="ElementShortName">R_O_mul</obj_property>
-         <obj_property name="ObjectShortName">R_O_mul</obj_property>
-      </wvobject>
-      <wvobject fp_name="/TestTOP/UART1/automat/R_O_div" type="logic">
-         <obj_property name="ElementShortName">R_O_div</obj_property>
-         <obj_property name="ObjectShortName">R_O_div</obj_property>
-      </wvobject>
-      <wvobject fp_name="/TestTOP/UART1/automat/a_" type="array">
-         <obj_property name="ElementShortName">a_[15:0]</obj_property>
-         <obj_property name="ObjectShortName">a_[15:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/TestTOP/UART1/automat/b_" type="array">
-         <obj_property name="ElementShortName">b_[15:0]</obj_property>
-         <obj_property name="ObjectShortName">b_[15:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/TestTOP/UART1/automat/c_" type="array">
-         <obj_property name="ElementShortName">c_[15:0]</obj_property>
-         <obj_property name="ObjectShortName">c_[15:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/TestTOP/UART1/automat/a_sum" type="array">
-         <obj_property name="ElementShortName">a_sum[15:0]</obj_property>
-         <obj_property name="ObjectShortName">a_sum[15:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/TestTOP/UART1/automat/b_sum" type="array">
-         <obj_property name="ElementShortName">b_sum[15:0]</obj_property>
-         <obj_property name="ObjectShortName">b_sum[15:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/TestTOP/UART1/automat/a_mul" type="array">
-         <obj_property name="ElementShortName">a_mul[15:0]</obj_property>
-         <obj_property name="ObjectShortName">a_mul[15:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/TestTOP/UART1/automat/b_mul" type="array">
-         <obj_property name="ElementShortName">b_mul[15:0]</obj_property>
-         <obj_property name="ObjectShortName">b_mul[15:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/TestTOP/UART1/automat/a_div" type="array">
-         <obj_property name="ElementShortName">a_div[15:0]</obj_property>
-         <obj_property name="ObjectShortName">a_div[15:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/TestTOP/UART1/automat/b_div" type="array">
-         <obj_property name="ElementShortName">b_div[15:0]</obj_property>
-         <obj_property name="ObjectShortName">b_div[15:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/TestTOP/UART1/automat/reset_sum" type="logic">
-         <obj_property name="ElementShortName">reset_sum</obj_property>
-         <obj_property name="ObjectShortName">reset_sum</obj_property>
-      </wvobject>
-      <wvobject fp_name="/TestTOP/UART1/automat/reset_mul" type="logic">
-         <obj_property name="ElementShortName">reset_mul</obj_property>
-         <obj_property name="ObjectShortName">reset_mul</obj_property>
-      </wvobject>
-      <wvobject fp_name="/TestTOP/UART1/automat/reset_div" type="logic">
-         <obj_property name="ElementShortName">reset_div</obj_property>
-         <obj_property name="ObjectShortName">reset_div</obj_property>
-      </wvobject>
-      <wvobject fp_name="/TestTOP/UART1/automat/R_I_sum" type="logic">
-         <obj_property name="ElementShortName">R_I_sum</obj_property>
-         <obj_property name="ObjectShortName">R_I_sum</obj_property>
-      </wvobject>
-      <wvobject fp_name="/TestTOP/UART1/automat/R_I_mul" type="logic">
-         <obj_property name="ElementShortName">R_I_mul</obj_property>
-         <obj_property name="ObjectShortName">R_I_mul</obj_property>
-      </wvobject>
-      <wvobject fp_name="/TestTOP/UART1/automat/R_I_div" type="logic">
-         <obj_property name="ElementShortName">R_I_div</obj_property>
-         <obj_property name="ObjectShortName">R_I_div</obj_property>
-      </wvobject>
-      <wvobject fp_name="/TestTOP/UART1/automat/state_sum" type="array">
-         <obj_property name="ElementShortName">state_sum[3:0]</obj_property>
-         <obj_property name="ObjectShortName">state_sum[3:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/TestTOP/UART1/automat/state_mul" type="array">
-         <obj_property name="ElementShortName">state_mul[3:0]</obj_property>
-         <obj_property name="ObjectShortName">state_mul[3:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/TestTOP/UART1/automat/state_div" type="array">
-         <obj_property name="ElementShortName">state_div[3:0]</obj_property>
-         <obj_property name="ObjectShortName">state_div[3:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/TestTOP/UART1/automat/a" type="array">
-         <obj_property name="ElementShortName">a[15:0]</obj_property>
-         <obj_property name="ObjectShortName">a[15:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/TestTOP/UART1/automat/b" type="array">
-         <obj_property name="ElementShortName">b[15:0]</obj_property>
-         <obj_property name="ObjectShortName">b[15:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/TestTOP/UART1/automat/c" type="array">
-         <obj_property name="ElementShortName">c[15:0]</obj_property>
-         <obj_property name="ObjectShortName">c[15:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/TestTOP/UART1/automat/result" type="array">
-         <obj_property name="ElementShortName">result[15:0]</obj_property>
-         <obj_property name="ObjectShortName">result[15:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/TestTOP/UART1/automat/x1" type="array">
-         <obj_property name="ElementShortName">x1[15:0]</obj_property>
-         <obj_property name="ObjectShortName">x1[15:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/TestTOP/UART1/automat/a11" type="array">
-         <obj_property name="ElementShortName">a11[15:0]</obj_property>
-         <obj_property name="ObjectShortName">a11[15:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/TestTOP/UART1/automat/a1" type="array">
-         <obj_property name="ElementShortName">a1[15:0]</obj_property>
-         <obj_property name="ObjectShortName">a1[15:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/TestTOP/UART1/automat/b1" type="array">
-         <obj_property name="ElementShortName">b1[15:0]</obj_property>
-         <obj_property name="ObjectShortName">b1[15:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/TestTOP/UART1/automat/fb" type="array">
-         <obj_property name="ElementShortName">fb[15:0]</obj_property>
-         <obj_property name="ObjectShortName">fb[15:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/TestTOP/UART1/automat/fb1" type="array">
-         <obj_property name="ElementShortName">fb1[15:0]</obj_property>
-         <obj_property name="ObjectShortName">fb1[15:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/TestTOP/UART1/automat/fx" type="array">
-         <obj_property name="ElementShortName">fx[15:0]</obj_property>
-         <obj_property name="ObjectShortName">fx[15:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/TestTOP/UART1/automat/fx1" type="array">
-         <obj_property name="ElementShortName">fx1[15:0]</obj_property>
-         <obj_property name="ObjectShortName">fx1[15:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/TestTOP/UART1/automat/denum" type="array">
-         <obj_property name="ElementShortName">denum[15:0]</obj_property>
-         <obj_property name="ObjectShortName">denum[15:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/TestTOP/UART1/automat/tmp" type="array">
-         <obj_property name="ElementShortName">tmp[15:0]</obj_property>
-         <obj_property name="ObjectShortName">tmp[15:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/TestTOP/UART1/automat/drob" type="array">
-         <obj_property name="ElementShortName">drob[15:0]</obj_property>
-         <obj_property name="ObjectShortName">drob[15:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/TestTOP/UART1/automat/num" type="array">
-         <obj_property name="ElementShortName">num[15:0]</obj_property>
-         <obj_property name="ObjectShortName">num[15:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/TestTOP/UART1/automat/px" type="array">
-         <obj_property name="ElementShortName">px[15:0]</obj_property>
-         <obj_property name="ObjectShortName">px[15:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/TestTOP/UART1/automat/dx" type="array">
-         <obj_property name="ElementShortName">dx[15:0]</obj_property>
-         <obj_property name="ObjectShortName">dx[15:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/TestTOP/UART1/automat/cnt" type="array">
-         <obj_property name="ElementShortName">cnt[9:0]</obj_property>
-         <obj_property name="ObjectShortName">cnt[9:0]</obj_property>
-      </wvobject>
    </wvobject>
    <wvobject fp_name="group136" type="group">
       <obj_property name="label">UART_INPUT_MANAGER</obj_property>
@@ -971,48 +667,9 @@
          <obj_property name="ElementShortName">clk</obj_property>
          <obj_property name="ObjectShortName">clk</obj_property>
       </wvobject>
-      <wvobject fp_name="/TestTOP/UART1/manager/state" type="array">
-         <obj_property name="ElementShortName">state[3:0]</obj_property>
-         <obj_property name="ObjectShortName">state[3:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/TestTOP/UART1/manager/x_char" type="array">
-         <obj_property name="ElementShortName">x_char[3:0]</obj_property>
-         <obj_property name="ObjectShortName">x_char[3:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/TestTOP/UART1/manager/y_char" type="array">
-         <obj_property name="ElementShortName">y_char[3:0]</obj_property>
-         <obj_property name="ObjectShortName">y_char[3:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/TestTOP/UART1/manager/frame_buf_addr" type="array">
-         <obj_property name="ElementShortName">frame_buf_addr[18:0]</obj_property>
-         <obj_property name="ObjectShortName">frame_buf_addr[18:0]</obj_property>
-         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
-      </wvobject>
-      <wvobject fp_name="/TestTOP/UART1/manager/frame_buf_data_in" type="array">
-         <obj_property name="ElementShortName">frame_buf_data_in[2:0]</obj_property>
-         <obj_property name="ObjectShortName">frame_buf_data_in[2:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/TestTOP/UART1/manager/color_reg" type="array">
-         <obj_property name="ElementShortName">color_reg[2:0]</obj_property>
-         <obj_property name="ObjectShortName">color_reg[2:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/TestTOP/UART1/manager/char_color_list" type="array">
-         <obj_property name="ElementShortName">char_color_list[0:14][2:0]</obj_property>
-         <obj_property name="ObjectShortName">char_color_list[0:14][2:0]</obj_property>
-      </wvobject>
       <wvobject fp_name="/TestTOP/UART1/manager/result_in" type="array">
          <obj_property name="ElementShortName">result_in[15:0]</obj_property>
          <obj_property name="ObjectShortName">result_in[15:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/TestTOP/UART1/manager/char_reg" type="array">
-         <obj_property name="ElementShortName">char_reg[0:11][0:8]</obj_property>
-         <obj_property name="ObjectShortName">char_reg[0:11][0:8]</obj_property>
-         <obj_property name="Radix">BINARYRADIX</obj_property>
-         <obj_property name="isExpanded"></obj_property>
-      </wvobject>
-      <wvobject fp_name="/TestTOP/UART1/manager/char_counter" type="array">
-         <obj_property name="ElementShortName">char_counter[3:0]</obj_property>
-         <obj_property name="ObjectShortName">char_counter[3:0]</obj_property>
       </wvobject>
       <wvobject fp_name="/TestTOP/UART1/manager/error_in" type="array">
          <obj_property name="ElementShortName">error_in[1:0]</obj_property>
@@ -1038,6 +695,10 @@
          <obj_property name="ElementShortName">mem_data_out[2:0]</obj_property>
          <obj_property name="ObjectShortName">mem_data_out[2:0]</obj_property>
       </wvobject>
+      <wvobject fp_name="/TestTOP/UART1/manager/state" type="array">
+         <obj_property name="ElementShortName">state[3:0]</obj_property>
+         <obj_property name="ObjectShortName">state[3:0]</obj_property>
+      </wvobject>
       <wvobject fp_name="/TestTOP/UART1/manager/result_reg" type="array">
          <obj_property name="ElementShortName">result_reg[15:0]</obj_property>
          <obj_property name="ObjectShortName">result_reg[15:0]</obj_property>
@@ -1054,13 +715,37 @@
          <obj_property name="ElementShortName">y0[9:0]</obj_property>
          <obj_property name="ObjectShortName">y0[9:0]</obj_property>
       </wvobject>
+      <wvobject fp_name="/TestTOP/UART1/manager/x_char" type="array">
+         <obj_property name="ElementShortName">x_char[3:0]</obj_property>
+         <obj_property name="ObjectShortName">x_char[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TestTOP/UART1/manager/y_char" type="array">
+         <obj_property name="ElementShortName">y_char[3:0]</obj_property>
+         <obj_property name="ObjectShortName">y_char[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TestTOP/UART1/manager/char_counter" type="array">
+         <obj_property name="ElementShortName">char_counter[3:0]</obj_property>
+         <obj_property name="ObjectShortName">char_counter[3:0]</obj_property>
+      </wvobject>
       <wvobject fp_name="/TestTOP/UART1/manager/string_reg" type="array">
          <obj_property name="ElementShortName">string_reg[0:14][0:4]</obj_property>
          <obj_property name="ObjectShortName">string_reg[0:14][0:4]</obj_property>
       </wvobject>
+      <wvobject fp_name="/TestTOP/UART1/manager/char_color_list" type="array">
+         <obj_property name="ElementShortName">char_color_list[0:14][2:0]</obj_property>
+         <obj_property name="ObjectShortName">char_color_list[0:14][2:0]</obj_property>
+      </wvobject>
       <wvobject fp_name="/TestTOP/UART1/manager/string_size" type="array">
          <obj_property name="ElementShortName">string_size[3:0]</obj_property>
          <obj_property name="ObjectShortName">string_size[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TestTOP/UART1/manager/char_reg" type="array">
+         <obj_property name="ElementShortName">char_reg[0:11][0:8]</obj_property>
+         <obj_property name="ObjectShortName">char_reg[0:11][0:8]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TestTOP/UART1/manager/color_reg" type="array">
+         <obj_property name="ElementShortName">color_reg[2:0]</obj_property>
+         <obj_property name="ObjectShortName">color_reg[2:0]</obj_property>
       </wvobject>
       <wvobject fp_name="/TestTOP/UART1/manager/color_arr" type="array">
          <obj_property name="ElementShortName">color_arr[0:3][2:0]</obj_property>
@@ -1069,6 +754,14 @@
       <wvobject fp_name="/TestTOP/UART1/manager/alphabet" type="array">
          <obj_property name="ElementShortName">alphabet[0:11][0:24][0:8]</obj_property>
          <obj_property name="ObjectShortName">alphabet[0:11][0:24][0:8]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TestTOP/UART1/manager/frame_buf_addr" type="array">
+         <obj_property name="ElementShortName">frame_buf_addr[18:0]</obj_property>
+         <obj_property name="ObjectShortName">frame_buf_addr[18:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TestTOP/UART1/manager/frame_buf_data_in" type="array">
+         <obj_property name="ElementShortName">frame_buf_data_in[2:0]</obj_property>
+         <obj_property name="ObjectShortName">frame_buf_data_in[2:0]</obj_property>
       </wvobject>
       <wvobject fp_name="/TestTOP/UART1/manager/frame_buf_data_out" type="array">
          <obj_property name="ElementShortName">frame_buf_data_out[2:0]</obj_property>
@@ -1109,10 +802,6 @@
       <wvobject fp_name="/TestTOP/UART1/manager/STR_WITH_KERNING_PIXEL_COUNT" type="array">
          <obj_property name="ElementShortName">STR_WITH_KERNING_PIXEL_COUNT[31:0]</obj_property>
          <obj_property name="ObjectShortName">STR_WITH_KERNING_PIXEL_COUNT[31:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="group670" type="group">
-         <obj_property name="label">BRAM</obj_property>
-         <obj_property name="DisplayName">label</obj_property>
       </wvobject>
    </wvobject>
    <wvobject fp_name="group247" type="group">
