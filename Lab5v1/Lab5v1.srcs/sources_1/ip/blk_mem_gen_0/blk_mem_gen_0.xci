@@ -3,7 +3,7 @@
   "ip_inst": {
     "xci_name": "blk_mem_gen_0",
     "component_reference": "xilinx.com:ip:blk_mem_gen:8.4",
-    "ip_revision": "10",
+    "ip_revision": "9",
     "gen_directory": "../../../../Lab5v1.gen/sources_1/ip/blk_mem_gen_0",
     "parameters": {
       "component_parameters": {
@@ -172,13 +172,13 @@
       },
       "runtime_parameters": {
         "IPCONTEXT": [ { "value": "IP_Flow" } ],
-        "IPREVISION": [ { "value": "10" } ],
+        "IPREVISION": [ { "value": "9" } ],
         "MANAGED": [ { "value": "TRUE" } ],
         "OUTPUTDIR": [ { "value": "../../../../Lab5v1.gen/sources_1/ip/blk_mem_gen_0" } ],
         "SELECTEDSIMMODEL": [ { "value": "" } ],
         "SHAREDDIR": [ { "value": "." } ],
-        "SWVERSION": [ { "value": "2024.2.2" } ],
-        "SYNTHESISFLOW": [ { "value": "GLOBAL" } ]
+        "SWVERSION": [ { "value": "2024.2" } ],
+        "SYNTHESISFLOW": [ { "value": "OUT_OF_CONTEXT" } ]
       }
     },
     "boundary": {

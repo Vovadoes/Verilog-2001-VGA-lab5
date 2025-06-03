@@ -1593,7 +1593,7 @@
         "OUTPUTDIR": [ { "value": "../../../../Lab5v1.gen/sources_1/ip/vio_1" } ],
         "SELECTEDSIMMODEL": [ { "value": "" } ],
         "SHAREDDIR": [ { "value": "." } ],
-        "SWVERSION": [ { "value": "2024.2.2" } ],
+        "SWVERSION": [ { "value": "2024.2" } ],
         "SYNTHESISFLOW": [ { "value": "GLOBAL" } ]
       }
     },

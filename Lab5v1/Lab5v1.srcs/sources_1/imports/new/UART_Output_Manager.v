@@ -4,10 +4,10 @@
 
 module UART_Output_Manager #
 (
-	ERROR_COUNT = 2, // Количество ошибок
-	RESULT_SIZE = 4, // Количество разрядов входного числа, представленного в 16-й СС 
-	CLOCK_RATE = 100_000_000, // Частота ПЛИС XC7A100T-1CSG324C семейства Artix-7 (в Гц)
-    BAUD_RATE = 9600,		  // Скорость передачи данных по UART (в бод)
+	parameter ERROR_COUNT = 2, // Количество ошибок
+	parameter RESULT_SIZE = 4, // Количество разрядов входного числа, представленного в 16-й СС 
+	parameter CLOCK_RATE = 100_000_000, // Частота ПЛИС XC7A100T-1CSG324C семейства Artix-7 (в Гц)
+    parameter BAUD_RATE = 9600,		  // Скорость передачи данных по UART (в бод)
     localparam ASCII_SIZE = 8,
     localparam HEX_SIZE = 4,
     localparam ERROR_IN_BIT_SIZE = $clog2(ERROR_COUNT)

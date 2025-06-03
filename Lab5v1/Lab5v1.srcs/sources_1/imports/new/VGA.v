@@ -58,6 +58,8 @@ begin
 	vga_clk <= 0;
 	vgaColor <= 0;
 	state <= `RESET;
+	Hsync <= 1;
+	Vsync <= 1;
 end
 // Основной блок
 always@(posedge vga_clk)
