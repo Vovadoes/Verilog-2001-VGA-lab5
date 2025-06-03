@@ -11,19 +11,18 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="0.000000000 ms"></ZoomStartTime>
-      <ZoomEndTime time="6.950976893 ms"></ZoomEndTime>
-      <Cursor1Time time="3.495812940 ms"></Cursor1Time>
+      <ZoomStartTime time="483,229.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="484,288.001 ns"></ZoomEndTime>
+      <Cursor1Time time="483,505.000 ns"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="304"></NameColumnWidth>
-      <ValueColumnWidth column_width="97"></ValueColumnWidth>
+      <NameColumnWidth column_width="293"></NameColumnWidth>
+      <ValueColumnWidth column_width="90"></ValueColumnWidth>
    </column_width_setting>
    <WVObjectSize size="7" />
    <wvobject fp_name="group263" type="group">
       <obj_property name="label">TEST</obj_property>
       <obj_property name="DisplayName">label</obj_property>
-      <obj_property name="isExpanded"></obj_property>
       <wvobject fp_name="/TestTOP/clk" type="logic">
          <obj_property name="ElementShortName">clk</obj_property>
          <obj_property name="ObjectShortName">clk</obj_property>
@@ -707,14 +706,6 @@
          <obj_property name="ElementShortName">error_reg[1:0]</obj_property>
          <obj_property name="ObjectShortName">error_reg[1:0]</obj_property>
       </wvobject>
-      <wvobject fp_name="/TestTOP/UART1/manager/x0" type="array">
-         <obj_property name="ElementShortName">x0[9:0]</obj_property>
-         <obj_property name="ObjectShortName">x0[9:0]</obj_property>
-      </wvobject>
-      <wvobject fp_name="/TestTOP/UART1/manager/y0" type="array">
-         <obj_property name="ElementShortName">y0[9:0]</obj_property>
-         <obj_property name="ObjectShortName">y0[9:0]</obj_property>
-      </wvobject>
       <wvobject fp_name="/TestTOP/UART1/manager/x_char" type="array">
          <obj_property name="ElementShortName">x_char[3:0]</obj_property>
          <obj_property name="ObjectShortName">x_char[3:0]</obj_property>
@@ -759,6 +750,20 @@
          <obj_property name="ElementShortName">frame_buf_addr[18:0]</obj_property>
          <obj_property name="ObjectShortName">frame_buf_addr[18:0]</obj_property>
       </wvobject>
+      <wvobject fp_name="/TestTOP/UART1/manager/x0" type="array">
+         <obj_property name="ElementShortName">x0[9:0]</obj_property>
+         <obj_property name="ObjectShortName">x0[9:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TestTOP/UART1/manager/y0" type="array">
+         <obj_property name="ElementShortName">y0[9:0]</obj_property>
+         <obj_property name="ObjectShortName">y0[9:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TestTOP/UART1/manager/frame_buf_we" type="logic">
+         <obj_property name="ElementShortName">frame_buf_we</obj_property>
+         <obj_property name="ObjectShortName">frame_buf_we</obj_property>
+      </wvobject>
       <wvobject fp_name="/TestTOP/UART1/manager/frame_buf_data_in" type="array">
          <obj_property name="ElementShortName">frame_buf_data_in[2:0]</obj_property>
          <obj_property name="ObjectShortName">frame_buf_data_in[2:0]</obj_property>
@@ -767,13 +772,10 @@
          <obj_property name="ElementShortName">frame_buf_data_out[2:0]</obj_property>
          <obj_property name="ObjectShortName">frame_buf_data_out[2:0]</obj_property>
       </wvobject>
-      <wvobject fp_name="/TestTOP/UART1/manager/frame_buf_we" type="logic">
-         <obj_property name="ElementShortName">frame_buf_we</obj_property>
-         <obj_property name="ObjectShortName">frame_buf_we</obj_property>
-      </wvobject>
       <wvobject fp_name="/TestTOP/UART1/manager/pixel_counter" type="array">
          <obj_property name="ElementShortName">pixel_counter[19:0]</obj_property>
          <obj_property name="ObjectShortName">pixel_counter[19:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
       </wvobject>
       <wvobject fp_name="/TestTOP/UART1/manager/i" type="array">
          <obj_property name="ElementShortName">i[31:0]</obj_property>

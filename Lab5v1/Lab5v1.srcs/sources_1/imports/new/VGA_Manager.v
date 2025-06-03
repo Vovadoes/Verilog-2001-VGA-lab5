@@ -93,7 +93,7 @@ reg frame_buf_we;																// Регистр сигнала, разреш�
 
 reg [$clog2(MAX_PIXEL_COUNT):0] 	pixel_counter;								// Счётчик пикселей
 
-reg [`HEIGHT-1:0] bitmap [0:`WIDTH-1];        // битмап рисунка
+reg  [0:`WIDTH-1] bitmap [`HEIGHT-1:0];        // битмап рисунка
 // Экземпляр True Dual Port BRAM
 blk_mem_gen_0 frame_buf 
 (
@@ -119,7 +119,7 @@ begin
 	// Заполнение памяти путем чтения из соответствующих файлов (чтение бинарное)
 	$readmemb("colors.mem", color_arr);
 	$readmemb("alphabet.mem", alphabet);
-	$readmemb("alphabet.mem", bitmap);	
+	$readmemb("image_1.mem", bitmap);	
 		
 	// Сброс памяти для строки (string_reg) и цветов символов (char_color_list)		
 	for (i = 0; i < `MAX_STRING_SIZE; i = i + 1)
