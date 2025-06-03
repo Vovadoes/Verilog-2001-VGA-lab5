@@ -135,26 +135,6 @@ clk_wiz_0 clk_wiz_0_1(
     .clk_out1(vga_clk)
 );
 
-//fsm #(
-//    .DIGIT_COUNT(DIGIT_COUNT),
-//    .ERROR_COUNT(ERROR_COUNT)
-//) FSM(
-//	.clk(clk),
-//	.R_I(FSM_Ready_Input),
-//	.reset(0),
-//	.R_O(FSM_Ready_Output),
-//	.dataIn(FSM_Data_Input),
-//	.dataOut(FSM_Data_Output),
-//	.error(FSM_Error_Output)
-//);
-
-//main main(
-//    .clk(clk),
-//    input PS2_clk,
-//    input PS2_dat,
-//    output [7:0] AN,
-//    output [6:0] SEG
-//);
 vio_0 vio0(
     .clk(clk),
     .probe_in0(vgaRed),
