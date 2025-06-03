@@ -378,6 +378,7 @@ begin: main
 		
 		`S2:
           begin
+            frame_buf_we <= 0;
 			x0 <= x0 + 1;
 			pixel_counter <= pixel_counter + 1;
 			state <= `S3;
@@ -385,16 +386,19 @@ begin: main
 		
 		`S3:
           begin
-			if (x0 == `WIDTH) begin
-		      frame_buf_we <= 0;
-		      if (y0 == `HEIGHT - 1) begin
+			if (x0 == `WIDTH)
+			begin
+		      if (y0 == `HEIGHT - 1)
+		      begin
 		        state <= `S6;
-		      end else begin
+		      end else
+		      begin
 		        y0 <= y0 + 1;
 		        x0 <= 0;
 		        state <= `S1;
 		      end
-		    end else begin
+		    end else
+		    begin
 		      state <= `S1;
 		    end
 		  end
