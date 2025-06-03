@@ -130,7 +130,7 @@ VGA vga(
 	.vgaEnd(vgaEnd)
 );
 
-clk_wiz_0(
+clk_wiz_0 clk_wiz_0_1(
     .clk_in1(clk),
     .clk_out1(vga_clk)
 );
