@@ -12,20 +12,26 @@
    </db_ref_list>
    <zoom_setting>
       <ZoomStartTime time="0.000000000 ms"></ZoomStartTime>
-      <ZoomEndTime time="14.130000001 ms"></ZoomEndTime>
-      <Cursor1Time time="10.000000000 ms"></Cursor1Time>
+      <ZoomEndTime time="16.510936125 ms"></ZoomEndTime>
+      <Cursor1Time time="8.627125000 ms"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="304"></NameColumnWidth>
-      <ValueColumnWidth column_width="108"></ValueColumnWidth>
+      <ValueColumnWidth column_width="103"></ValueColumnWidth>
    </column_width_setting>
    <WVObjectSize size="7" />
    <wvobject fp_name="group263" type="group">
       <obj_property name="label">TEST</obj_property>
       <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
       <wvobject fp_name="/TestTOP/clk" type="logic">
          <obj_property name="ElementShortName">clk</obj_property>
          <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/TestTOP/counter_pixel" type="array">
+         <obj_property name="ElementShortName">counter_pixel[31:0]</obj_property>
+         <obj_property name="ObjectShortName">counter_pixel[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
       </wvobject>
       <wvobject fp_name="/TestTOP/RsTx" type="logic">
          <obj_property name="ElementShortName">RsTx</obj_property>
@@ -1003,66 +1009,6 @@
          <obj_property name="ObjectShortName">char_reg[0:11][0:8]</obj_property>
          <obj_property name="Radix">BINARYRADIX</obj_property>
          <obj_property name="isExpanded"></obj_property>
-         <wvobject fp_name="/TestTOP/UART1/manager/char_reg[0]" type="array">
-            <obj_property name="ElementShortName">[0][0:8]</obj_property>
-            <obj_property name="ObjectShortName">[0][0:8]</obj_property>
-            <obj_property name="Radix">BINARYRADIX</obj_property>
-         </wvobject>
-         <wvobject fp_name="/TestTOP/UART1/manager/char_reg[1]" type="array">
-            <obj_property name="ElementShortName">[1][0:8]</obj_property>
-            <obj_property name="ObjectShortName">[1][0:8]</obj_property>
-            <obj_property name="Radix">BINARYRADIX</obj_property>
-         </wvobject>
-         <wvobject fp_name="/TestTOP/UART1/manager/char_reg[2]" type="array">
-            <obj_property name="ElementShortName">[2][0:8]</obj_property>
-            <obj_property name="ObjectShortName">[2][0:8]</obj_property>
-            <obj_property name="Radix">BINARYRADIX</obj_property>
-         </wvobject>
-         <wvobject fp_name="/TestTOP/UART1/manager/char_reg[3]" type="array">
-            <obj_property name="ElementShortName">[3][0:8]</obj_property>
-            <obj_property name="ObjectShortName">[3][0:8]</obj_property>
-            <obj_property name="Radix">BINARYRADIX</obj_property>
-         </wvobject>
-         <wvobject fp_name="/TestTOP/UART1/manager/char_reg[4]" type="array">
-            <obj_property name="ElementShortName">[4][0:8]</obj_property>
-            <obj_property name="ObjectShortName">[4][0:8]</obj_property>
-            <obj_property name="Radix">BINARYRADIX</obj_property>
-         </wvobject>
-         <wvobject fp_name="/TestTOP/UART1/manager/char_reg[5]" type="array">
-            <obj_property name="ElementShortName">[5][0:8]</obj_property>
-            <obj_property name="ObjectShortName">[5][0:8]</obj_property>
-            <obj_property name="Radix">BINARYRADIX</obj_property>
-         </wvobject>
-         <wvobject fp_name="/TestTOP/UART1/manager/char_reg[6]" type="array">
-            <obj_property name="ElementShortName">[6][0:8]</obj_property>
-            <obj_property name="ObjectShortName">[6][0:8]</obj_property>
-            <obj_property name="Radix">BINARYRADIX</obj_property>
-         </wvobject>
-         <wvobject fp_name="/TestTOP/UART1/manager/char_reg[7]" type="array">
-            <obj_property name="ElementShortName">[7][0:8]</obj_property>
-            <obj_property name="ObjectShortName">[7][0:8]</obj_property>
-            <obj_property name="Radix">BINARYRADIX</obj_property>
-         </wvobject>
-         <wvobject fp_name="/TestTOP/UART1/manager/char_reg[8]" type="array">
-            <obj_property name="ElementShortName">[8][0:8]</obj_property>
-            <obj_property name="ObjectShortName">[8][0:8]</obj_property>
-            <obj_property name="Radix">BINARYRADIX</obj_property>
-         </wvobject>
-         <wvobject fp_name="/TestTOP/UART1/manager/char_reg[9]" type="array">
-            <obj_property name="ElementShortName">[9][0:8]</obj_property>
-            <obj_property name="ObjectShortName">[9][0:8]</obj_property>
-            <obj_property name="Radix">BINARYRADIX</obj_property>
-         </wvobject>
-         <wvobject fp_name="/TestTOP/UART1/manager/char_reg[10]" type="array">
-            <obj_property name="ElementShortName">[10][0:8]</obj_property>
-            <obj_property name="ObjectShortName">[10][0:8]</obj_property>
-            <obj_property name="Radix">BINARYRADIX</obj_property>
-         </wvobject>
-         <wvobject fp_name="/TestTOP/UART1/manager/char_reg[11]" type="array">
-            <obj_property name="ElementShortName">[11][0:8]</obj_property>
-            <obj_property name="ObjectShortName">[11][0:8]</obj_property>
-            <obj_property name="Radix">BINARYRADIX</obj_property>
-         </wvobject>
       </wvobject>
       <wvobject fp_name="/TestTOP/UART1/manager/char_counter" type="array">
          <obj_property name="ElementShortName">char_counter[3:0]</obj_property>

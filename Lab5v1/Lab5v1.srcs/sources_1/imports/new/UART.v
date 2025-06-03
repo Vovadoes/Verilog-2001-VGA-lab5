@@ -244,7 +244,7 @@ UART_Output_Manager #(
 wire [3:0] VGA_M_state = manager.state;
 
 VGA_Manager manager(
-    .clk(vga_clk),
+    .clk(clk),
     .result_in(FSM_Data_Output),
     .error_in(FSM_Error_Output),
     .ready_to_change(FSM_Ready_Output),
@@ -257,7 +257,7 @@ VGA_Manager manager(
 wire [1:0] VGA_state = vga.state;
 
 VGA vga(
-    .clk(vga_clk),
+    .clk(clk),
     .mem_data(mem_data),
     .mem_addr(mem_addr),
     .vgaRed(vgaRed),

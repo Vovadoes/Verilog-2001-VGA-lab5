@@ -39,6 +39,11 @@ reg [7:0] UART_TX_Data_Arr [0:LENGHT_ARR - 1];
 reg [0:2] state;
 
 integer iter;
+integer fileRGB;
+integer fileHsync;
+integer fileVsync;
+
+integer counter_pixel;
 
 assign RsRx = tx;
 
@@ -48,6 +53,7 @@ always #5 clk = ~clk;
 initial
 begin
     clk = 0;
+    counter_pixel = 0;
     state = 0;
     UART_TX_Data_In = 0;
     UART_TX_Ready_In = 0;
@@ -68,6 +74,36 @@ begin
     UART_TX_Data_Arr[12] = 8'h30;
     UART_TX_Data_Arr[13] = 8'h30;
     UART_TX_Data_Arr[14] = 8'h0D;
+    
+    // Открытие одного файла для RGB
+    fileRGB = $fopen("images/vgaRGB.txt", "w");
+    fileHsync = $fopen("images/fileHsync.txt", "w");
+    fileVsync = $fopen("images/fileVsync.txt", "w");
+
+    if (!fileRGB || !fileHsync || !fileVsync) begin
+        $display("Ошибка открытия файла");
+        $finish;
+    end
+    
+end
+
+always@ (posedge UART1.vga.vga_clk)
+begin
+    if (counter_pixel == (800 + 56 + 120 + 64) * (600 + 37 + 6 + 23) + 2)
+    begin
+        $fclose(fileRGB);
+        $fclose(fileHsync);
+        $fclose(fileVsync);
+        $finish;
+    end
+    else if (counter_pixel > 1)
+    begin
+        $fwrite(fileRGB, "%b%b%b", vgaRed, vgaGreen, vgaBlue);
+        $fwrite(fileHsync, "%b", Hsync);
+        $fwrite(fileVsync, "%b", Vsync);
+    end
+    counter_pixel <= counter_pixel + 1;
+    //$display("vgaRed=%b, vgaGreen=%b, vgaBlue=%b, Hsync=%b, Vsync=%b", vgaRed, vgaGreen, vgaBlue, Hsync, Vsync);
 end
 
 always@ (posedge clk)
