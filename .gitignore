@@ -405,3 +405,6 @@ FodyWeavers.xsd
 **/Lab5v1.runs/
 /Lab5v1/*.str
 /Lab5v1/*.jou
+/Scripts/.venv
+/Scripts/.idea
+/Lab5v1/Lab5v1.srcs/utils_1
